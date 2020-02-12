@@ -1,0 +1,40 @@
+﻿App.Name: Note
+App.FullName: Heleus Note
+App.Developer: Heleus Core
+App.Description: Share notes accross all your devices
+App.Link: https://heleuscore.com/note/
+App.Version: 0.1.0 (build 1)
+App.Scheme: heleusnote
+
+## PAGES
+#
+NotesPage.Title: Heleus Note
+NotesPage.Info: Thank you for using {0}.\n\nStart to share short notes accross all your devices in an easy and fast way. Access all your notes from your smartphone, your tablet, your Mac or PC.\n\nHave you ever seen or read something on your smartphone that you want to read later at home on a big screen? Just use {0}.\n
+NotesPage.More: Show More
+NotesPage.NoNotes: No notes found
+NotesPage.Import: Import shared secret
+NotesPage.Download: Download note
+NotesPage.Add: Add your first note
+
+AddNotePage.Title: Add Note
+AddNotePage.Text: Note Text
+AddNotePage.Submit: Save Note
+AddNotePage.ConfirmSubmit: Submit the note?
+AddNotePage.Success: The note was saved.
+
+NoteInfoPage.Title: Note
+NoteInfoPage.Note: Note
+NoteInfoPage.Download: Download Note
+NoteInfoPage.Import: Import Secret Key
+NoteInfoPage.SecretKeyInfo: Secret Key Info
+NoteInfoPage.TransactionInfo: Transaction Info
+
+
+NoteView.Default: * 
+NoteView.SecretMissing: * Secret Key "{0}" missing!
+NoteView.AttachementMissing: * Note download failed!
+NoteView.Error: * Unknown error!
+
+NoteUserCodes: Note Service error: {0} (Code {1}).
+NoteUserCodes.InvalidTransaction: Invalid Transaction
+NoteUserCodes.InvalidAttachement: Invalid Note Data

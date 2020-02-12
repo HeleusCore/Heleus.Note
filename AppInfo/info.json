@@ -1,0 +1,12 @@
+{
+  "fullname": "Heleus Note",
+  "name": "Note",
+  "description": "Synchronize notes across all your devices.",
+  "developer": "Heleus Core",
+  "domain": "heleuscore.com",
+  "link": "https://heleuscore.com/note/",
+  "package": "com.heleuscore.note",
+  
+  "primarycolor":"140,140,50",
+  "secondarycolor":"190,210,50"
+}

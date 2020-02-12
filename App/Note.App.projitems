@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{98E1B380-87B9-4F3E-9579-0ECE0ED21E32}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Heleus.Apps.Note</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Page\TestPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UIApp\UIApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UIApp\UIAppSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UIApp\Theme.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\AboutPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\SettingsPage.cs" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)..\debuginfo.txt">
+      <Link>debuginfo.txt</Link>
+    </EmbeddedResource>
+    <Compile Include="$(MSBuildThisFileDirectory)NoteApp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\NotesPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\AddNotePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HeleusClientResponseExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NoteUploadedEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NoteData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NoteDataChangedEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Page\NoteInfoPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NoteView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Translation\en.txt" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)..\..\Heleus.AppBase\AppTemplate\App\Translation\en.common.txt">
+      <Link>Translation\en.common.txt</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Views\" />
+  </ItemGroup>
+</Project>
