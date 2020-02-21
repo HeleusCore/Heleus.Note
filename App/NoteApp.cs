@@ -98,7 +98,7 @@ namespace Heleus.Apps.Shared
             }
 
             var secretKey = submitAccount.DefaultSecretKey;
-            var attachements = serviceNode.Client.NewAttachements();
+            var attachements = serviceNode.Client.NewAttachements(NoteServiceInfo.ChainIndex);
             var note = await EncrytpedRecord<NoteRecord>.EncryptRecord(secretKey, new NoteRecord(text));
 
             attachements.AddBinaryAttachement(NoteServiceInfo.NoteFileName, note.ToByteArray());

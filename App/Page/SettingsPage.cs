@@ -20,6 +20,16 @@ namespace Heleus.Apps.Shared
                 await Navigation.PushAsync(new ServiceNodesPage());
             }).SetDetailViewIcon(ServiceNodesPage.PageIcon);
 
+            AddButtonRow("RevenuePage.Title", async (button) =>
+            {
+                if (!ServiceNodeManager.Current.Ready)
+                {
+                    await MessageAsync("ServiceNodeManagerNotReady");
+                    return;
+                }
+                await Navigation.PushAsync(new RevenuePage());
+            }).SetDetailViewIcon(Icons.MoneyCheckEdit);
+
             AddButtonRow(HandleRequestPage.HandleRequestTranslation, async (button) =>
             {
                 await Navigation.PushAsync(new HandleRequestPage());
